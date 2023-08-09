@@ -140,3 +140,7 @@ main{
     background-color: #0050f5;
     border-radius: 50px;
 }
+#borde{
+    border: 1px solid black;
+    border-radius: 50px;
+}

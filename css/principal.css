@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.Seccion1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 1%;
+}
+#SecDer1{
+    width: 100%;
+
+
+}
+#imgsecder1{
+    width: 125%;
+    position: absolute;
+    right: -1800px;
+    top: -1600px;
+}
+#logo{
+    width: 100%;
+}
+#imglogo{
+    width: 40%;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+#boton{
+    width: 25%;
+    background-color: #0050f5;
+    padding: 10px; 
+    border-radius: 50px; 
+    text-align: center;
+}
+a{
+    text-decoration: none;
+
+    color: white !important;
+}
+.etiquetas{
+    display: flex;;
+    padding: 2%;
+    justify-content: center;
+    gap: 20px;
+    height: 10%;
+}
+#etiq{
+    height: 100%;
+}
+.Sec2{
+    display: flex;
+    justify-content: center;
+}
+#Sec22{
+    display: flex;
+    justify-content: center;
+}
+.Secccion2 > #textgr{
+    display: flex;
+    text-align: center;
+}
