@@ -14,6 +14,13 @@
     font-family: "Kollektif";
     src: url(../font/Kollektif.ttf) format(truetype);
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html,body{
     margin: 0;
     padding: 0;
@@ -81,7 +88,7 @@ main{
     height: 100%;
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.34%;
-    grid-template-rows: 30% 70%;
+    grid-template-rows: 25% 75%;
     grid-template-areas: 
     "reserve reserve reserve"
     "device service continuar";
@@ -135,11 +142,33 @@ main{
     "imagenes"
     "relleno";
 }
-/* device */
-.device{
+#borde{
     display: flex;
-    flex-direction: column;
+    text-align: start;
+    justify-content: start;
+    align-items: center;
+    height: 69px;
+    width: 470px;
+    border: 1px solid #000000;
+    border-radius: 40px;
+    padding:10px;
 }
+#bordec{
+    display: flex;
+    text-align: start;
+    justify-content: start;
+    align-items: center;
+    height: 69px;
+    width: 470px;
+    border: 1px solid #000000;
+    border-radius: 40px;
+    padding:10px;
+    padding-left: 30px;
+}
+#borde p{
+    margin: 0;
+}
+/* device */
 .device #titulo{
     text-align: center;
 }
@@ -150,16 +179,15 @@ main{
     align-items: center;
     gap:22px
 }
-#arrow{
-    background-color: #000000;
+.device #relleno{
+    margin-left: 90px;
 }
 /* serivice */
-.service{
-    display: flex;
-    flex-direction: column;
-}
 .service #titulo{
     text-align: center;
+}
+.service h4{
+    margin-top: 0;
 }
 .service #imagenes{
     display: flex;
