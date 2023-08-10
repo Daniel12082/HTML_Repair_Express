@@ -145,6 +145,7 @@ main{
 }
 /* contact */
 .contact{
+    padding-top: 50px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -155,11 +156,18 @@ main{
 .contact h4{
     width: 442px;
 }
+#text{
+    text-align: start;
+}
+#text p{
+    margin-left: 5%;
+}
 /* Money */
 .money {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 50px;
 }
 /* Continuar */
 .continuar{
