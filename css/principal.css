@@ -1,10 +1,19 @@
+@font-face {
+    font-family: "MyriadPro-Light";
+    src: url(../font/MyriadPro-Light.woff) format(woff);
+}
+@font-face {
+    font-family: "MyriadPro-Regular";
+    src: url(../font/MYRIADPRO-REGULAR.woff) format(woff);
+}
 *{
     margin: 0;
 }
 html, body{
+    font-family: MyriadPro-Regular;
     height: 100%;
     width: 100%;
-    overflow: hidden;
+
 }
 .Seccion1{
     display: grid;
@@ -15,6 +24,10 @@ html, body{
     width: 100%;
 
 
+}
+#SecIzq1{
+    padding: 2%;
+    padding-right: 5%;
 }
 #imgsecder1{
     width: 125%;
@@ -39,6 +52,7 @@ html, body{
     padding: 10px; 
     border-radius: 50px; 
     text-align: center;
+    
 }
 a{
     text-decoration: none;
@@ -47,7 +61,7 @@ a{
 }
 .etiquetas{
     display: flex;;
-    padding: 2%;
+    padding: 5%;
     justify-content: center;
     gap: 20px;
     height: 10%;
@@ -58,12 +72,120 @@ a{
 .Sec2{
     display: flex;
     justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    padding-bottom: 40px ;
 }
 #Sec22{
     display: flex;
     justify-content: center;
 }
-.Secccion2 > #textgr{
+.Seccion1 #textpq,.Seccion1 #textgr{
+    text-align: left;
+    padding-top: 2%;
+}
+.Seccion1 #textgr{
+    text-align: left;
+    font-size: 32px;
+    padding-top: 2%;
+}
+#imgsec2{
     display: flex;
+    justify-content: center;
+    padding: 10px;
+    height: 90px;
+}
+#imgs2{
+    height: 100%;
+}
+#imgs3{
+    width: 100%;
+}
+#textpq{
     text-align: center;
+    font-size: 17px;
+}
+#textgr{
+    text-align: center;
+    font-size: 30px;
+}
+.Sec4{
+    display: flex;
+    justify-content: center;
+    gap: 110px;
+    padding-top: 40px;
+}
+#textgrng{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1.8px
+    
+}
+#textpqchi{
+    text-align: center;
+    font-size: 11px;
+    font-family: ;
+    font-family: MyriadPro-Light;
+    
+}
+.Seccion2 #textpqchi{
+    height: 30%;
+    display: flex ;
+    align-items: center !important;
+    padding-top: 10px;
+    line-height: 15px;
+    font-family: MyriadPro-Regular;
+
+}
+#imgsec4{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    height: 200px;
+    width: 200px;
+}
+.Sec5{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+#imgsec5{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    height: 200px;
+    width: 200px;
+}
+.Footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: #0050f5;
+    width: 100%;
+    height: 100px;
+}
+#textpqfooter{
+    width: 13%;
+    color: #ffffff;
+    text-align: center
+}
+.Seccion6{
+    text-align: center;
+    background-image: url(../images/Campesinos.png) ;
+    background-size: cover;
+}
+#Sec6{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    gap: 20px;
+
+}
+#imgs6{
+    width: 33%;
+}
+#img6{
+    width: 100%;
 }

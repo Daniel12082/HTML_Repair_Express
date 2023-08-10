@@ -21,7 +21,7 @@
 
 /*Formato de la ventana*/
 .modalbox{
-    width: 400px;
+    width: 600px;
     height: 500px;
     position: relative;
     padding: 5px 20px 13px 20px;
@@ -71,9 +71,9 @@ margin:10% auto;
     color: #FFFFFF;
     line-height: 25px;
     position: absolute;
-    right: 1px;
+    right: 12px;
     text-align: center;
-    top: 1px;
+    top: 15px;
     width: 24px;
     text-decoration: none;
     font-weight: bold;
@@ -82,8 +82,8 @@ margin:10% auto;
 }
 
 .close:hover {
-background: #FAAC58;
-color:#222;
+    background: #FAAC58;
+    color:white;
 }
 /*Img*/
 .img{
@@ -92,43 +92,36 @@ color:#222;
 }
 #i1 {
     grid-area: i1;
-}
-#i2{
-    grid-area: i2;
-}
-#i3{
-    grid-area: i3;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-right: 2%;
+    justify-content: center;
 }
 #text1{
     grid-area: text1;
 }
-.container{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 50% 50%;
-    grid-template-areas: 
-    "text1 text1 text1"
-    "i1 i2 i3 ";
-    align-items: center;
-    text-align: justify;
-    border: 1px solid red;
-
+a{
+    text-decoration: none;
 }
 .img1{
-    border: solid 1px red;
+
+    display: block;
+    margin: 0 auto;
+    height: 20px;
 }
-.imagen{
-    border: 1px solid seagreen;
-}
+
 #text1{
     width: 100%;
+    font-size: 60%;
+    display: flex;
+    justify-content: center;
+    border-top: #111 solid .5px;
 }
 #dato{
     grid-area: dato;
 }
-#container{
-    grid-area: container;
-}
+
 .relleno{
     height: 70%;
     display: grid;
@@ -138,9 +131,66 @@ color:#222;
     "dato"
     "container"
 }
+/*Dato*/
 #dato{
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
+}
+#dato > p{
+    font-size: 15px;
+    align-items: center;
+}
+/*Botones*/
+button {
+    --primary-color: #0050F5;
+    --secondary-color: #fff;
+    --hover-color: #111;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: background-color 0.3s ease;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 6%;
+    width: auto;
+    height: 50px;
+}
+button:hover {
+    background-color: white;
+    color: #0050F5;
+    border: 2px solid #0050F5;
+}
+
+.boton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    
+    
+}    
+.container{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+input,
+select{
+    padding: 5px;
+    width: 80%;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+    height: 30px;
 }
