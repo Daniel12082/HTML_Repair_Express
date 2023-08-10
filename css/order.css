@@ -7,12 +7,8 @@
     src: url(../font/MyriadPro-Light.woff) format(woff);
 }
 @font-face {
-    font-family: "MyriadPro-Light";
+    font-family: "MyriadPro-Semibold";
     src: url(../font/MYRIADPRO-SEMIBOLD.woff) format(woff);
-}
-@font-face {
-    font-family: "Kollektif";
-    src: url(../font/Kollektif.ttf) format(truetype);
 }
 
 *{
@@ -75,14 +71,17 @@ main{
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid #000000;
-    padding: 15px 180px 35px;
+    padding: 15px 180px 5px;
 }
 
 #fotop {
     width: 107px;
     height: 107px;
 }
-
+#logo{
+    width: 190px;
+    height: 90px;
+}
 /* Secciones */
 .content{
     height: 100%;
@@ -145,18 +144,7 @@ main{
 #borde{
     display: flex;
     text-align: start;
-    justify-content: start;
-    align-items: center;
-    height: 69px;
-    width: 470px;
-    border: 1px solid #000000;
-    border-radius: 40px;
-    padding:10px;
-}
-#bordec{
-    display: flex;
-    text-align: start;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     height: 69px;
     width: 470px;
@@ -164,9 +152,28 @@ main{
     border-radius: 40px;
     padding:10px;
     padding-left: 30px;
+    padding-right: 20px;
+}
+#bordec{
+    display: flex;
+    text-align: start;
+    justify-content: space-between;
+    align-items: center;
+    height: 69px;
+    width: 470px;
+    border: 1px solid #000000;
+    border-radius: 40px;
+    padding:10px;
+    padding-left: 30px;
+    padding-right: 20px;
 }
 #borde p{
     margin: 0;
+}
+.texti{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* device */
 .device #titulo{
@@ -186,9 +193,6 @@ main{
 .service #titulo{
     text-align: center;
 }
-.service h4{
-    margin-top: 0;
-}
 .service #imagenes{
     display: flex;
     flex-direction: row;
@@ -198,6 +202,9 @@ main{
 }
 #arrow{
     background-color: #000000;
+}
+.service #relleno{
+    margin-left: 90px;
 }
 /* Tamaño de imagenes */
 #imagen1{
@@ -212,6 +219,7 @@ main{
     width: 72px;
     height: 101px;
     margin: 22px;
+    margin-bottom: 10px;
 }
 #imagen4{
     width: 42px;
@@ -230,7 +238,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 188px;
+    height: 200px;
     width: 105px;
     background-color: #0050F5;
     border-radius: 20px;
@@ -262,7 +270,7 @@ main{
     justify-content:space-between;
     align-items:start;
     padding-top:170px;
-    padding-left: 30px;
+    padding-left:120px;
 }
 #button{
     width: 246px;
@@ -271,5 +279,12 @@ main{
     border-radius: 60px;
     background-color: #0050F5;
     color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#button:hover {
+    background-color: #ffffff;
+    color:#0050F5;
+    border: 2px solid #0050F5;
 }
 
