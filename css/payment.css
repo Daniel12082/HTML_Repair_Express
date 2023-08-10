@@ -90,16 +90,16 @@ main{
     grid-template-rows: 25% 75%;
     grid-template-areas: 
     "pay pay pay"
-    "device service continuar";
+    "contact money continuar";
 }
 .pay{
     grid-area: pay;
 }
-.device{
-    grid-area: device;
+.contact{
+    grid-area: contact;
 }
-.service{
-    grid-area: service;
+.money{
+    grid-area: money;
 }
 .continuar{
     grid-area: continuar;
@@ -111,8 +111,8 @@ main{
     justify-content: center;
     text-align: center;
     align-items: center;
-    align-content: center;}
-
+    align-content: center;
+}
 .pay h3{
     margin-top: 26px;
     margin-bottom: 13px;
@@ -121,148 +121,45 @@ main{
     width: 618px;
     margin: 0px;
 }
-
-/* Device Y Service */
-.titulo{
-    grid-area: titulo;
+/* contact Y money */
+#datos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:20px
 }
-.imagenes{
-    grid-area: imagenes;
+#datos2{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:20px
 }
-.relleno{
-    grid-area: relleno;
+#centro{ 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.device,.service{
+/* contact */
+.contact{
+    width: 100%;
     height: 100%;
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 10% 30% 60%;
-    grid-template-areas: 
-    "titulo"
-    "imagenes"
-    "relleno";
-}
-#borde{
-    display: flex;
-    text-align: start;
-    justify-content: space-between;
-    align-items: center;
-    height: 69px;
-    width: 470px;
-    border: 1px solid #000000;
-    border-radius: 40px;
-    padding:10px;
-    padding-left: 30px;
-    padding-right: 20px;
-}
-#bordec{
-    display: flex;
-    text-align: start;
-    justify-content: space-between;
-    align-items: center;
-    height: 69px;
-    width: 470px;
-    border: 1px solid #000000;
-    border-radius: 40px;
-    padding:10px;
-    padding-left: 30px;
-    padding-right: 20px;
-}
-#borde p{
-    margin: 0;
-}
-.texti{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-/* device */
-.device #titulo{
     text-align: center;
 }
-.device #imagenes{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap:22px
+.contact h4{
+    width: 442px;
 }
-.device #relleno{
-    margin-left: 90px;
-}
-/* serivice */
-.service #titulo{
-    text-align: center;
-}
-.service #imagenes{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap:22px
-}
-#arrow{
-    background-color: #000000;
-}
-.service #relleno{
-    margin-left: 90px;
-}
-/* Tamaño de imagenes */
-#imagen1{
-    width: 125px;
-    height: 124px;
-}
-#imagen2{
-    width: 62px;
-    height: 124px;
-}
-#imagen3{
-    width: 72px;
-    height: 101px;
-    margin: 22px;
-    margin-bottom: 10px;
-}
-#imagen4{
-    width: 42px;
-    height: 84px;
-}
-#imagen5{
-    width: 73px;
-    height: 147px;
-}
-#imagen6{
-    width: 68px;
-    height: 68px;
-}
-#imagenb1{
+/* Money */
+.money {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 200px;
-    width: 105px;
-    background-color: #0050F5;
-    border-radius: 20px;
-}
-#imagenb1 p{
-    margin: 0;
-    margin-top: 4px;
-    color:#ffffff
-}
-#imagenb2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 202px;
-    width: 112px;
-    background-color: #0050F5;
-    border-radius: 20px;
-}
-#imagenb2 p{
-    margin: 0;
-    margin-top: 4px;
-    color:#ffffff
 }
 /* Continuar */
 .continuar{
@@ -288,4 +185,118 @@ main{
     color:#0050F5;
     border: 2px solid #0050F5;
 }
-
+/* imagenes */
+.imagenes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:28px;
+    margin-bottom:39px
+}
+#visab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 89px;
+    height: 61px;
+    border-radius: 15px;
+    background-color: #0050F5;
+}
+#visa{
+    width: 67px;
+    height: 45px;
+}
+#mastercard{
+    width: 67px;
+    height: 45px;
+}
+#amex{
+    width: 61px;
+    height: 34px;
+}
+/* borde */
+#borde1{
+    display: flex;
+    text-align: start;
+    justify-content: space-between;
+    align-items: center;
+    height: 69px;
+    width: 279px;
+    border: 1px solid #000000;
+    border-radius: 40px;
+    padding:10px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+#borde2{
+    display: flex;
+    text-align: start;
+    justify-content: space-between;
+    align-items: center;
+    height: 69px;
+    width: 218px;
+    border: 1px solid #000000;
+    border-radius: 40px;
+    padding:10px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+#borde3{
+    display: flex;
+    text-align: start;
+    justify-content: space-between;
+    align-items: center;
+    height: 69px;
+    width: 335px;
+    border: 1px solid #000000;
+    border-radius: 40px;
+    padding:10px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+#borde4{
+    display: flex;
+    text-align: start;
+    justify-content: space-between;
+    align-items: center;
+    height: 69px;
+    width: 335px;
+    border: 1px solid #000000;
+    border-radius: 40px;
+    padding:10px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+#borde5{
+    display: flex;
+    text-align: start;
+    justify-content: space-between;
+    align-items: center;
+    height: 69px;
+    width: 158px;
+    border: 1px solid #000000;
+    border-radius: 40px;
+    padding:10px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+#bordet{
+    display: flex;
+    text-align: start;
+    justify-content: space-between;
+    align-items: start;
+    height: 69px;
+    width: 486px;
+    border: 1px solid #000000;
+    border-radius: 40px;
+    padding:10px;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+#tarjeta{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 15px;
+}
