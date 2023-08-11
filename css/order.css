@@ -56,6 +56,12 @@ main{
     align-items: center;
     justify-content: center;
 }
+.esquina {
+    height: 107px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .esquina1 {
     grid-area: esquina1;

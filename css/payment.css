@@ -167,7 +167,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 45px;
+    padding-top: 40px;
 }
 /* Continuar */
 .continuar{
@@ -176,8 +176,8 @@ main{
     display: flex;
     flex-direction: column;
     align-items:start;
-    padding-top: 45px;
-    padding-right: 185px;
+    padding-top: 35px;
+    padding-right: 90px;
 }
 .continuar div p{
     margin: 3%;
@@ -198,7 +198,7 @@ main{
     border: 2px solid #0050F5;
 }
 #boton{
-    margin-top: 10%;
+    margin-top: 2%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -210,15 +210,38 @@ main{
     border-top:1px solid #000000;
     border-bottom:1px solid #000000;
 }
+#fecha p{
+    margin-top: 2.5%;
+}
 #subtotal{
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
-#precio{
+.precio{
     width: 100%;
     display:flex;
     justify-content: space-between;
+}
+#precio1{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#precio1 div p,#precio1 div h3{
+    margin: 5px;
+}
+#total{
+    border-top:1px solid #000000 ;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+} 
+#textp{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 /* imagenes */
 .imagenes{

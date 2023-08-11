@@ -1,0 +1,134 @@
+@font-face {
+    font-family: "MyriadPro-Regular";
+    src: url(../font/MYRIADPRO-REGULAR.woff) format(woff);
+}
+@font-face {
+    font-family: "MyriadPro-Light";
+    src: url(../font/MyriadPro-Light.woff) format(woff);
+}
+@font-face {
+    font-family: "MyriadPro-Semibold";
+    src: url(../font/MYRIADPRO-SEMIBOLD.woff) format(woff);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Distribucion de la pantalla */
+.navbar{
+    grid-area: navbar;
+}
+.content{
+    grid-area: content;
+}
+main{
+    height: 100vh;
+    padding-top: 33px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 85%;
+    grid-template-areas:
+    "navbar" 
+    "content";
+}
+/* Navbar */
+.navbar {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 180px 1fr 180px; /* Adjust column widths as needed */
+    grid-template-areas: 
+        "esquina1 navsec esquina2";
+    align-items: center;
+}
+
+.esquina {
+    height: 107px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.esquina1 {
+    grid-area: esquina1;
+}
+
+.esquina2 {
+    grid-area: esquina2;
+}
+
+#navsec {
+    grid-area: navsec;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #000000;
+    padding: 15px 180px 5px;
+}
+
+#fotop {
+    width: 107px;
+    height: 107px;
+}
+#logo{
+    width: 190px;
+    height: 90px;
+}
+/* Reparar */
+.repair{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+}
+/* content */
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#text{
+    text-align: center;
+    width: 1070px;
+}
+.repair{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#tools{
+    height: 63px;
+}
+/* boton */
+#button{
+    width: 246px;
+    height: 72px;
+    border: none;
+    border-radius: 60px;
+    background-color: #0050F5;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#button:hover {
+    background-color: #ffffff;
+    color:#0050F5;
+    border: 2px solid #0050F5;
+}
+#boton{
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
