@@ -1,68 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Login prototipo</title>
 </head>
+
 <body>
-<ul>
-    <button><a href="#modal1">Ingresar</a></button>
-</ul>
-<div id="modal1" class="modalmask">
-    <div class="modalbox movedown">
-    <a href="#close" title="Close" class="close">
-        <i class="fa-solid fa-right-from-bracket"></i>
-    </a>
-    <div class="img">
-        <img src="image/Repair.png" alt="Repair-Express">
-    </div>    
-    <div class="relleno">
-        <div id="dato">
-            <p class="titulo">Por favor Ingrese tu Repair Express ID</p>
-            <label for="fname">Repair Express ID:</label><br>
-            <input type="text" id="fname" name="fname"><br>
-            <label for="pwd">Contraseña</label><br>
-            <input type="password" id="pwd" name="pwd">
-            <div class="boton">    
-            <a href="order.html"></a><button>Ingresar</button>
-            <a href="#modal2"><button>Registrase</button></a>
-            </div>    
-        </div>
-        <div class="container" id="container"> 
-            <div id="text1"><p>Tambien puedes utilizar</p></div>
-            <div class="imagen" id="i1">
-                <img src="image/google.jpg" alt="Google" class="img1">
-                <img src="image/facebook.jpg" alt="facebook" class="img1">
-                <img src="image/apple.jpg" alt="apple" class="img1">
+    <ul>
+        <button><a href="#modal1">Ingresar</a></button>
+    </ul>
+    <div id="modal1" class="modalmask">
+        <div class="modalbox movedown" id="login">
+            <a href="#close" title="Close" class="close">
+                <i class="fa-solid fa-right-from-bracket"></i>
+            </a>
+            <div class="img">
+                <img src="image/Repair.png" alt="Repair-Express">
+            </div>
+            <div class="relleno">
+                <div id="dato">
+                    <h4 class="centrado">Por favor Ingresa tu Repair Express ID</h4>
+                    <p>Repair Express ID: </p><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <p>Contraseña</p><br>
+                    <input type="password" id="pwd" name="pwd">
+                    <div id="botones">
+                        <a href="prueba.html"><button>Ingresar</button></a>
+                        <a href="#modal2"><button>Registrase</button></a>
+                    </div>
+
+                </div>
+                <div class="container" id="container">
+                    <div id="text1">
+                        <p>Tambien puedes utilizar</p>
+                    </div>
+                    <div class="imagen" id="i1">
+                        <img src="image/google.jpg" alt="Google" class="img1">
+                        <img src="image/facebook.jpg" alt="facebook" class="img1">
+                        <img src="image/apple.jpg" alt="apple" class="img1">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    </div>
-</div>
-<div id="modal2" class="modalmask">
-    <div class="modalbox movedown" id="login1">
-        <a href="#close" title="Close" class="close"><i class="fa-solid fa-right-from-bracket"></i> </a>
-        <div class="img">
-            <img src="image/Repair.png" alt="Repair-Express">
-        </div>
-        <div class="Contenedor">
-            <label for="fcorreo">Correo Electronico(Este sera tu Repair Express ID)</label>
-            <input type="text" id="fcorreo" name="fcorreo"><br>
-            <label for="fcontraseña">Contraseña</label><br>
-            <input type="password" id="pwd" name="pwd"><br>
-            <label for="frcontraseña">Repetir Contraseña</Label><br>
-            <input type="password" id="pwd" name="pwd"><br>
-            <label for="fechaNacimiento">Fecha de Nacimiento:</label><br>
-            <input type="date" id="fechaNacimiento" name="fechaNacimiento"><br>
-            <label for="fdireccion">Direccion</label><br>
-            <input type="text" id="fdireccion" name="fdireccion"><br>
+
+
+    <div id="modal2" class="modalmask">
+        <div class="modalbox movedown" id="login1">
+            <a href="#close" title="Close" class="close"><i class="fa-solid fa-right-from-bracket"></i> </a>
+            <div class="img">
+                <img src="image/Repair.png" alt="Repair-Express">
+            </div>
+            <div class="contenido">
+                <p>Correo Electronico(Este sera tu Repair Express ID)</p>
+                <input type="text" id="fcorreo" name="fcorreo"><br>
+                <p>Contraseña</p><br>
+                <input type="password" id="pwd" name="pwd"><br>
+                <p>Repetir Contraseña</p><br>
+                <input type="password" id="pwd" name="pwd"><br>
+                <p>Fecha de Nacimiento:</p><br>
+                <input type="date" id="fechaNacimiento" name="fechaNacimiento"><br>
+                <p>Direccion</p><br>
+                <input type="text" id="fdireccion" name="fdireccion"><br>
+            </div>
             <div class="botons">
                 <button>Registrase</button>
             </div>
-        </div>        
+        </div>
     </div>
 </body>
+
 </html>
