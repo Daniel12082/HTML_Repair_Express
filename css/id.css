@@ -306,7 +306,10 @@ main {
     text-align: center;
     padding-right: 12rem;
 }
-
+.Me1{
+    color:var(--black);
+    text-decoration: none;
+}
 .icon {
     display: inline-block;
     width: 1.9em;
