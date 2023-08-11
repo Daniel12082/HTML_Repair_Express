@@ -1,0 +1,382 @@
+@font-face {
+    font-family: "MyriadPro-light";
+    src: url(../font/MyriadPro-Light.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "MyriadPro";
+    src: url(../font/MYRIADPRO-REGULAR.OTF) format("truetype");
+}
+
+@font-face {
+    font-family: "MyriadPro-Bold";
+    src: url(../font/MYRIADPRO-BOLD.OTF) format("truetype");
+}
+
+/*Pantalla del responsive de iphone13*/
+@media (max-width: 428px) {
+    header {
+        font-size: 24px;
+    }
+
+    .menu {
+        font-size: 20px;
+    }
+
+    .repair {
+        width: 8%;
+    }
+
+    main {
+        grid-template-columns: 100%;
+    }
+
+    .pedro {
+        padding-right: 2rem;
+    }
+
+    .bienvenido {
+        font-size: 28px !important;
+    }
+
+    .cambiar {
+        font-size: 24px;
+    }
+
+    .texto1 {
+        font-size: 16px;
+    }
+
+    .entrar {
+        height: 60px;
+        width: 200px;
+        font-size: 24px;
+    }
+
+    .status20 {
+        font-size: 18px !important;
+    }
+
+    .cambiar2 {
+        font-size: 16px;
+    }
+
+    .cambiar1,
+    .tecnico {
+        font-size: 16px;
+    }
+
+    .usuario {
+        width: 20%;
+    }
+
+    .baja {
+        width: 100px;
+        height: 30px;
+        font-size: 12px;
+    }
+}
+
+/*Pantalla de 1920x1060px*/
+@media (min-width: 1500px) {
+    header {
+        font-size: 36px;
+    }
+
+    .menu {
+        font-size: 30px;
+    }
+
+    .repair {
+        width: 12%;
+    }
+
+    .pedro {
+        padding-right: 8rem;
+    }
+
+    .bienvenido {
+        font-size: 44px !important;
+    }
+
+    .cambiar {
+        font-size: 36px;
+    }
+
+    .texto1 {
+        font-size: 24px;
+    }
+
+    .entrar {
+        height: 90px;
+        width: 300px;
+        font-size: 36px;
+    }
+
+    .status20 {
+        font-size: 30px !important;
+    }
+
+    .cambiar2 {
+        font-size: 24px;
+    }
+
+    .cambiar1,
+    .tecnico {
+        font-size: 24px;
+    }
+
+    .usuario {
+        width: 18%;
+    }
+
+    .baja {
+        width: 150px;
+        height: 45px;
+        font-size: 18px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "MyriadPro";
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    height: 10%;
+    align-items: center;
+    font-size: 30px;
+}
+
+.menu {
+    font-size: 25px;
+}
+
+.repair {
+    width: 10%;
+}
+
+hr {
+    width: 90%;
+    margin: auto;
+    height: 2px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30% 70%;
+    gap: 1rem;
+}
+
+.pedro {
+    grid-column: 1/4;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-right: 4rem;
+}
+
+.pedro>p {
+    font-size: 18px;
+}
+
+.bienvenido {
+    font-size: 34px !important;
+    font-weight: 500;
+}
+
+.personal,
+.facturacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1.3rem;
+    text-align: center;
+}
+
+.cambiar {
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.texto1 {
+    font-size: 18px;
+}
+
+.prueba {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.entrar {
+    height: 72px;
+    width: 246px;
+    border: none;
+    background-color: #0050F5;
+    color: white;
+    font-size: 30px;
+    border-radius: 50px;
+}
+
+.actual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.servicio {
+    font-size: 34px;
+}
+
+.google {
+    width: 100%;
+}
+
+.status-g {
+    display: flex;
+    font-size: 15px;
+    gap: 3.5rem;
+    font-family: "MyriadPro-light";
+}
+
+.status20 {
+    font-size: 20px !important;
+}
+
+.reportar {
+    border: none;
+    background-color: red;
+    color: white;
+    width: 4.8rem;
+    border-radius: 20px;
+}
+
+.celular {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.cambio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cambiar2 {
+    font-size: 20px;
+}
+
+.cambiar1,
+.tecnico {
+    font-family: "MyriadPro-Bold";
+    font-size: 20px;
+}
+
+.info-andres {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.usuario {
+    width: 14%;
+}
+
+.tecnico {
+    width: 100%;
+    text-align: center;
+    padding-right: 12rem;
+}
+
+.icon {
+    display: inline-block;
+    width: 1.9em;
+    height: 1.9em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.iconos {
+    display: flex;
+    gap: 1rem;
+}
+
+.boton-bajo {
+    display: flex;
+    justify-content: end;
+    align-self: flex-end;
+    padding-right: 20px;
+}
+
+.baja {
+    width: 129px;
+    height: 38px;
+    border: none;
+    background-color:#0050F5;
+    color: white;
+    border-radius: 40px;
+    font-size: 15px;
+}
+
+button {
+    cursor: pointer;
+}
+
+@media (min-width:768px) and (max-width:1124px) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: max-content;
+    }
+
+    .actual {
+        grid-column: 1/3;
+        position: unset;
+    }
+
+    .pedro {
+        padding-top: 1rem;
+    }
+}
+
+@media (max-width:767px) {
+    main {
+        grid-template-columns: 100%;
+        grid-template-rows: max-content;
+    }
+
+    .pedro,
+    .personal,
+    .facturacion,
+    .actual {
+        grid-column: 1/2;
+    }
+
+    body {
+        overflow-y: scroll;
+        text-align: center;
+    }
+
+    .pedro {
+        padding: 1rem;
+    }
+}

@@ -1,68 +1,93 @@
+@font-face {
+    font-family: "MyriadPro-light";
+    src: url(../font/MyriadPro-Light.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "MyriadPro";
+    src: url(../font/MYRIADPRO-REGULAR.OTF) format("truetype");
+}
+
+@font-face {
+    font-family: "MyriadPro-Bold";
+    src: url(../font/MYRIADPRO-BOLD.OTF) format("truetype");
+}
+
 /*Efecto*/
 .modalmask {
     position: fixed;
-    font-family: Arial, sans-serif;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     z-index: 99999;
-    opacity:0;
+    opacity: 0;
     -webkit-transition: opacity 400ms ease-in;
     -moz-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
     pointer-events: none;
 }
+
 .modalmask:target {
-    opacity:1;
+    opacity: 1;
     pointer-events: auto;
 }
 
 /*Formato de la ventana*/
-.modalbox{
-    width: 600px;
-    height: 500px;
+.modalbox {
+    width: 500px;
+    height: 703px;
     position: relative;
-    padding: 5px 20px 13px 20px;
+    margin-top:32px;
+    padding: 5px 10px 13px 20px;
     background: #fff;
-    border-radius:20px;
+    border-radius: 20px;
     -webkit-transition: all 500ms ease-in;
     -moz-transition: all 500ms ease-in;
     transition: all 500ms ease-in;
-        
+
 }
-/*Input */
-input{
+
+#login1 {
+    width: 500px;
+    height: 700px;
+    position: relative;
+    margin: 20px;
+    padding: 5px 10px 13px 20px;
+    background: #fff;
     border-radius: 20px;
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;
+}
+
+/*Input */
+input {
+    border-radius: 40px;
+    height: 60px;
 }
 
 /*Movimientos*/
 .movedown {
     margin: 0 auto;
 }
+
 .rotate {
     margin: 10% auto;
-    -webkit-transform: scale(-5,-5);
-    transform: scale(-5,-5);
+    -webkit-transform: scale(-5, -5);
+    transform: scale(-5, -5);
 }
+
 .resize {
     margin: 10% auto;
-    width:0;
-    height:0;
+    width: 0;
+    height: 0;
 
 }
-.modalmask:target .movedown{       
-margin:10% auto;
-}
-.modalmask:target .rotate{     
-    transform: rotate(360deg) scale(1,1);
-    -webkit-transform: rotate(360deg) scale(1,1);
-}
 
-.modalmask:target .resize{
-    width:400px;
-    height:200px;
+.modalmask:target .movedown {
+    margin: 1px ;
 }
 
 /*Boton de cerrar*/
@@ -77,19 +102,21 @@ margin:10% auto;
     width: 24px;
     text-decoration: none;
     font-weight: bold;
-    border-radius:3px;
+    border-radius: 3px;
 
 }
 
 .close:hover {
     background: #FAAC58;
-    color:white;
+    color: white;
 }
+
 /*Img*/
-.img{
+.img {
     display: flex;
     justify-content: center;
 }
+
 #i1 {
     grid-area: i1;
     display: flex;
@@ -98,50 +125,77 @@ margin:10% auto;
     margin-right: 2%;
     justify-content: center;
 }
-#text1{
+
+#text1 {
     grid-area: text1;
 }
-a{
+
+a {
     text-decoration: none;
 }
-.img1{
+
+.img1 {
 
     display: block;
     margin: 0 auto;
     height: 20px;
 }
 
-#text1{
+#text1 {
     width: 100%;
     font-size: 60%;
     display: flex;
     justify-content: center;
     border-top: #111 solid .5px;
 }
-#dato{
+
+#dato {
     grid-area: dato;
+
 }
 
-.relleno{
+.relleno {
     height: 70%;
     display: grid;
-    grid-template-columns:1fr;
-    grid-template-rows:80% 20%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80% 20%;
     grid-template-areas:
-    "dato"
-    "container"
+        "dato"
+        "container"
 }
+
 /*Dato*/
-#dato{
+#dato {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
 }
-#dato > p{
+
+#dato>p {
     font-size: 15px;
-    align-items: center;
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
 }
+
+#contitle>p {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contenido {
+    font-size: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
 /*Botones*/
 button {
     --primary-color: #0050F5;
@@ -159,38 +213,221 @@ button {
     gap: 0.6em;
     font-weight: bold;
     text-decoration: none;
+    text-align: center;
     cursor: pointer;
     margin: 6%;
     width: auto;
     height: 50px;
 }
+
 button:hover {
     background-color: white;
     color: #0050F5;
     border: 2px solid #0050F5;
 }
 
-.boton{
+button>a {
+    color: #fff;
+}
+
+#botones {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: nowrap;
-    align-content: center;
     justify-content: center;
-    
-    
-}    
-.container{
+    grid-gap: 10px;
+}
+
+.btn1 {
+    margin-right: 3%;
+}
+
+.container {
     display: flex;
     align-items: center;
     align-content: center;
     flex-direction: column;
 }
+
 input,
-select{
+select {
     padding: 5px;
     width: 80%;
     border: 2px solid #ccc;
     border-radius: 30px;
-    height: 30px;
+    height: 41px;
 }
+
+
+
+@media (max-width: 428px) {
+    ul {
+        text-align: center;
+    }
+
+    ul button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .modalmask {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modalbox {
+        width: 90%;
+        height: 90%;
+    }
+
+    .modalbox.movedown {
+        top: 5%;
+    }
+
+    .modalbox .img {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .modalbox .relleno {
+        padding: 20px;
+    }
+
+    .modalbox input[type="text"],
+    .modalbox input[type="password"],
+    .modalbox input[type="date"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .modalbox .botones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .modalbox button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .modalbox .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .modalbox .imagen {
+        margin-top: 10px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .modalbox .img1 {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (min-width: 1500px) {
+    ul {
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+    }
+
+    ul button {
+        padding: 15px 30px;
+        font-size: 18px;
+        
+    }
+
+    .modalmask {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modalbox {
+        width: 204px;
+        height:70%;
+    }
+
+    .modalbox.movedown {
+        top: 10%;
+    }
+
+    .modalbox .img {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .modalbox .relleno {
+        padding: 30px;
+    }
+
+    .modalbox input[type="text"],
+    .modalbox input[type="password"],
+    .modalbox input[type="date"] {
+        width: 80%;
+        padding: 0;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    .modalbox .botones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modalbox button {
+        width: 100%;
+        padding: 20px;
+        margin-bottom: 12px;
+        font-size: 18px;
+    }
+}
+
+.modalbox .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.modalbox .imagen {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.modalbox .img1 {
+    width: 40px;
+    height: 40px;
+}
+
+.botons {
+    width: 140px;
+    height: 70px;
+    margin:auto;
+}
+.textdato{
+    text-align: left;
+    width: 75%;
+}
+.textdato .titulo,.password {
+    text-align: center;
+    padding-bottom:1%;
+    font-size: 18px !important;
+}
+.pss{
+    text-align: left;
+}
+

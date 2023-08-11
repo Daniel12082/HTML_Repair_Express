@@ -8,6 +8,8 @@
 }
 *{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 html, body{
     font-family: MyriadPro-Regular;
@@ -18,22 +20,18 @@ html, body{
 .Seccion1{
     display: grid;
     grid-template-columns: 50% 50%;
-    padding: 1%;
-}
-#SecDer1{
-    width: 100%;
-
-
-}
-#SecIzq1{
-    padding: 2%;
-    padding-right: 5%;
+    padding: 0;
 }
 #imgsecder1{
-    width: 125%;
-    position: absolute;
-    right: -1800px;
-    top: -1600px;
+    padding-top: 30px;
+    height: 7%;
+    width: 43%;
+    display: flex;
+    justify-content: right;
+}
+#SecIzq1{
+    padding-left: 8%;
+    padding-top: 10%;
 }
 #logo{
     width: 100%;
@@ -41,30 +39,55 @@ html, body{
 #imglogo{
     width: 40%;
 }
-.botones{
+.botonespr{
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 #boton{
-    width: 25%;
+    width: 30%;
+    height: 4vw;
     background-color: #0050f5;
-    padding: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #0050F5;
     border-radius: 50px; 
     text-align: center;
+    font-size: 32px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
     
+}
+#boton:hover {
+    background-color: #ffffff;
+    color:#0050F5;
+    border: 2px solid #0050F5;
+}
+#let{
+    height: 7vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#let:hover {
+    color:#0050F5;
 }
 a{
     text-decoration: none;
-
     color: white !important;
+    
+}
+#boton a{
+    width: 100% !important;
 }
 .etiquetas{
     display: flex;;
     padding: 5%;
     justify-content: center;
-    gap: 20px;
-    height: 10%;
+    gap: 50px;
+    height: 22%;
 }
 #etiq{
     height: 100%;
@@ -72,60 +95,62 @@ a{
 .Sec2{
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     padding: 10px;
     padding-bottom: 40px ;
 }
 #Sec22{
     display: flex;
     justify-content: center;
+    width: 100%;
+}
+#Sec22 #boton{
+    width: 13%;
 }
 .Seccion1 #textpq,.Seccion1 #textgr{
     text-align: left;
-    padding-top: 2%;
+    padding-top: 5%;
 }
 .Seccion1 #textgr{
     text-align: left;
-    font-size: 32px;
+    font-size: 61px;
     padding-top: 2%;
+    line-height: 80px;
 }
 #imgsec2{
     display: flex;
     justify-content: center;
     padding: 10px;
-    height: 90px;
+    height: 200px;
 }
 #imgs2{
     height: 100%;
 }
-#imgs3{
-    width: 100%;
-}
+
 #textpq{
     text-align: center;
-    font-size: 17px;
+    font-size: 33px;
 }
 #textgr{
     text-align: center;
-    font-size: 30px;
+    font-size: 59px;
 }
 .Sec4{
     display: flex;
     justify-content: center;
-    gap: 110px;
-    padding-top: 40px;
+    gap: 300px;
+    padding-top: 100px;
 }
 #textgrng{
     text-align: center;
-    font-size: 32px;
+    font-size: 59px;
     font-weight: bold;
     letter-spacing: 1.8px
     
 }
 #textpqchi{
     text-align: center;
-    font-size: 11px;
-    font-family: ;
+    font-size: 20px;
     font-family: MyriadPro-Light;
     
 }
@@ -133,59 +158,165 @@ a{
     height: 30%;
     display: flex ;
     align-items: center !important;
-    padding-top: 10px;
-    line-height: 15px;
+    padding-top: 50px;
+    line-height: 30px;
     font-family: MyriadPro-Regular;
 
 }
+.Seccion2{
+    padding-top: 3%;
+}
+
 #imgsec4{
     display: flex;
     justify-content: center;
+    align-items: center;
     padding: 20px;
-    height: 200px;
-    width: 200px;
+    height: 320px;
+    width: 100%;
+}
+#imgs4{
+    height: 100%;
 }
 .Sec5{
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 400px;
 }
-#imgsec5{
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    height: 200px;
-    width: 200px;
-}
+
 .Footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
     background-color: #0050f5;
     width: 100%;
     height: 100px;
 }
 #textpqfooter{
-    width: 13%;
+    width: 12%;
     color: #ffffff;
-    text-align: center
+    text-align: center;
+    font-size: 20px;
+    font-family: MyriadPro-Light; 
 }
 .Seccion6{
     text-align: center;
     background-image: url(../images/Campesinos.png) ;
     background-size: cover;
+    width: 100% ;
+    height: 91%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
 }
 #Sec6{
     display: flex;
     justify-content: center;
     align-items: center ;
-    gap: 20px;
+    gap: 100px;
+    height: 40%;
 
 }
 #imgs6{
-    width: 33%;
+    width: 38%;
 }
-#img6{
+#img61{
+    width: 120%;
+}
+#img62{
     width: 100%;
+}
+#imgs5{
+    height: 100%;
+}
+
+#content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#content #textpq{
+    height: 30%;
+    display: flex;
+    align-items: center;
+}
+#content #textgr{
+    height: 35%;
+    display: flex;
+    align-items: end;
+    gap: 15px;
+}
+#amarillo{
+    color: rgb(251, 218, 74);
+    opacity: 70%;
+}
+#azul{
+    color: rgb(4, 4, 187);
+    opacity: 70%;
+}
+#rojo{
+    color: rgb(186, 5, 5);
+    opacity: 70%;
+}
+#imgsec5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    height: 650px;
+    width: 200px;
+}
+#iPad #imgsec5 #imgiPad{
+    height: 80%;
+}
+#imgs3{
+    width: 100%;
+}
+#imgsec3{
+    text-align: center;
+    background-image: url(../images/FZIyxxiPx6APvjtD.full.png) ;
+    background-size: cover;
+    background-position: 70%;
+    width: 100% ;
+    height: 1150px;
+}
+#SecDer1{
+    text-align: center;
+    background-image: url(../images/iPhoneTransparente.png) ;
+    background-size: cover;
+    background-position: -740px;
+    width: 220% ;
+    height: 100%;
+}
+#SD{
+    overflow: hidden;
+}
+@media (max-width: 1850px){
+    #textgr{
+        font-size: 59px !important;
+        line-height: 80px !important;
+    }
+    #textpq{
+        font-size: 31px !important;
+    }
+    #boton{
+        font-size: 31px;
+    }
+    #SecDer1{
+        text-align: center;
+        background-image: url(../images/iPhoneTransparente.png) ;
+        background-size: cover;
+        background-position: -680px;
+        width: 220% ;
+        height: 100%;
+    }
+    #SecIzq1{
+        padding-top: 2% !important;
+    }
 }

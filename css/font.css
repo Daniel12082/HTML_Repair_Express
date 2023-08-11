@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "MyriadPro-Regular";
+    src: url(../font/MYRIADPRO-REGULAR.woff) format(woff);
+}
+@font-face {
+    font-family: "MyriadPro-Light";
+    src: url(../font/MyriadPro-Light.woff) format(woff);
+}
+@font-face {
+    font-family: "MyriadPro-Semibold";
+    src: url(../font/MYRIADPRO-SEMIBOLD.woff) format(woff);
+}
+.Me1{
+    text-decoration: none;
+    color: #000000;
+}
+.M1{
+    font-family:MyriadPro-Regular;
+}
+.M2{
+    font-family:MyriadPro-Light;
+}
+.M3{
+    font-family: MyriadPro-Semibold;
+}
+.T1{
+    font-size: 34px;
+}
+.T2{
+    font-size: 18px;
+}
+.T3{
+    font-size:12px ;
+}
+.T4{
+    font-size: 25px;
+}
+.T5{
+    font-size: 10px;
+}
+.T6{
+    font-size: 30px;
+}
+.C1{
+    color:#707070
+}
